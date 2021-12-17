@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "ef585dc7-a315-43e4-84ea-5dbc78ccadf3"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -10,6 +13,7 @@
           "inlineTemplate": true,
           "inlineStyle": true,
           "skipTests": true
+          
         },
         "@schematics/angular:class": {
           "skipTests": true
