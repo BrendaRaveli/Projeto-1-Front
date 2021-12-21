@@ -20,7 +20,7 @@ export class DataBindingComponent  {
     this.contadorClique = 0;
   }
 
-//  /* Key(event: any){
+//  KeyUp(event: any){
 //     this.nome = event.target.value;
 
 
