@@ -11,6 +11,7 @@ import { rootRouterConfig } from './app.routes';
 import { FormsModule } from '@angular/forms';
 import { APP_BASE_HREF } from '@angular/common';
 import { DataBindingComponent } from './demos/data-binding/data-binding.component';
+import { ListaProdutoComponent } from './produtos/lista-produto/lista-produto.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,9 @@ import { DataBindingComponent } from './demos/data-binding/data-binding.componen
     FooterComponent,
     SobreComponent,
     ContatoComponent,
-    DataBindingComponent
+    DataBindingComponent,
+    ListaProdutoComponent,
+    
   ],
   imports: [
     BrowserModule,
