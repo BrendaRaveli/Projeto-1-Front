@@ -1,8 +1,10 @@
+import { style } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-home',
   templateUrl:'./home.component.html'
+
 
 })
 export class HomeComponent {
@@ -20,24 +22,24 @@ export class HomeComponent {
   
     public cards = [{
       nome:"Multiplataforma",
-      texto:"Lorem ipsum dolor",
+      texto:"...",
       imagem:"https://www.pngkey.com/png/full/699-6998196_apps-para-eventos-multiplataformas.png"
   
     },
     {
       nome:"Performance",
-      texto:"Lorem ipsum dolor2",
+      texto:"...",
       imagem:"https://w7.pngwing.com/pngs/243/739/png-transparent-performance-management-advertising-performance-improvement-infographic-miscellaneous-photography-human-resources.png"
     
     },
     {
       nome:"Produtividade",
-      texto:"Lorem ipsum dolor3",
+      texto:"...",
       imagem:"https://s3.amazonaws.com/mlabs-s3-blog/wp-content/uploads/2016/05/produtividade.png"
     },
     {
       nome:"Funcionalidade",
-      texto:"Lorem ipsum dolor4",
+      texto:"...",
       imagem:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjGSNpXMQkjqJ4V10_hxcZ1yYmhB3g-aBbSA&usqp=CAU"
     },
     ]

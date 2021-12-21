@@ -13,12 +13,12 @@
     </div>
   </header>
   
-  <div class="d-flex justify-content-center col-12 row">
-      <div class="text-center"  *ngFor="let item of cards">
-  
-        <div class="m-2">
-          <div class="card h-100">
-            <img class="card-img-top" src="{{item.imagem}}" height="150px" width="200px" alt="" >
+  <div class="d-flex justify-content-center col-4 row">
+      <div *ngFor="let item of cards" class="col-md-4" style="padding-bottom: 30px;">
+        <div class="card h-100">>
+          <a class="text-decoration-none">
+    
+            <img class="card-img-top" src="{{item.imagem}}" max-height="30px" max-width="60px" alt="" >
             <div class="card-body">
               <h4 class="card-title">{{item.nome}}</h4>
               <p class="card-text">{{item.texto}}</p>
@@ -26,7 +26,5 @@
                 <a href="#" class="btn btn-primary">Saiba mais</a>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-  </div>
+        
+      

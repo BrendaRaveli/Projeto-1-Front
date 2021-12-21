@@ -22,14 +22,14 @@
             "valor":250.00,
             "promocao": false,
             "valorPromo": 0,
-            "imagem": "mouse.jpg"
+            "imagem": "Monitor.jpg"
         },
         {
             "id": 4,
             "nome":"Laptop Asus",
             "valor":3000.00,
             "promocao": true,
-            "valorPromo": 0,
+            "valorPromo": 999.90,
             "imagem": "laptop.jpg"
         },
     {
@@ -45,7 +45,7 @@
         "nome":"Webcam Logitech",
         "valor":90.00,
         "promocao": true,
-        "valorPromo": 0,
+        "valorPromo": 49.99,
         "imagem": "mouse.jpg"
     },
     {
