@@ -14,6 +14,13 @@ import { APP_BASE_HREF } from '@angular/common';
 import { DataBindingComponent } from './demos/data-binding/data-binding.component';
 import { ListaProdutoComponent } from './produtos/lista-produto/lista-produto.component';
 import { HttpClientModule } from '@angular/common/http';
+import {LOCALE_ID, DEFAULT_CURRENCY_CODE} from '@angular/core';
+import localePt from '@angular/common/locales/pt';
+import {registerLocaleData} from '@angular/common';
+
+registerLocaleData(localePt, 'pt');
+
+
 
 @NgModule({
   declarations: [
@@ -36,8 +43,18 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   providers: [
     ProdutoService,
+    {
+      provide: LOCALE_ID,
+      useValue: 'pt'
+  },
+  {
+      provide:  DEFAULT_CURRENCY_CODE,
+      useValue: 'BRL'
+  },
+
     {provide: APP_BASE_HREF, useValue: '/'}
   ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
