@@ -1,4 +1,8 @@
-<div class="container main-container">
+<div class="container main-container d-flex justify-content-center ">
+    <div class="row text-center d-inline-flex p-2 bd-highlight">
+        
+
+    
     <h3>Interpolation</h3>
 
     <p> O numero de cliques é: {{ contadorClique }}</p> 
@@ -14,19 +18,28 @@
   
 
     <h3>Property Binging</h3>
+    <div class="d-flex justify-content-center">
+        <div class= "d-inline-flex p-2 bd-highlight">
+    <button class="btn btn-info" [disabled]="contadorClique >= 10">info</button>&nbsp;
 
-    <button class="btn btn-info" [disabled]="contadorClique >= 10">info</button><br><br>
-    <img [src]="urlImagem" height="50px" width="50px" />
+    <img [src]="urlImagem" height="50px" width="50px" />&nbsp;
 
+
+
+    </div>
+    </div>
     <br>
     <br>
     <br>
    
 
     <h3>Event Binding</h3>
-    <button class="btn btn-warning "(click)='adicionarClique()'>Clique-me</button>&nbsp;
+    <div class="d-flex justify-content-center">
+        <div class= "d-inline-flex p-2 bd-highlight">
+    <button class="btn btn-warning "(click)='adicionarClique()'>Clique-me</button>&nbsp;&nbsp;
     <button class="btn btn-danger" (click)='zerarContador()' [disabled]='contadorClique < 10'> Zerar Contador</button> 
-
+    </div>
+    </div>
     <br>
     <br>
     <br>
@@ -37,11 +50,18 @@
     <br> 
     <label>Seu nome: {{ nome }}</label><br> -->
  
+    <div class="d-flex justify-content-center">
+        <div class= "d-inline-flex p-2 bd-highlight">
     <input type="text" [(ngModel)]="nome" placeholder="Digite o nome">
+        </div>
+    </div>
+    
     <br>
     <br>
     <br>
 
     <label [ngClass]="nome" >Seu nome é: {{ nome }}</label> 
 
-</div> -->
+</div>
+</div>
+

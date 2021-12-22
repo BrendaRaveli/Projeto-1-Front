@@ -1,7 +1,7 @@
 
 <header class="bg-primary py-5 mb-5">
     <div class="container h-100">
-      <div class="row h-100 align-items-center">
+      <div class="row text-center">
         <div class="col-lg-2">
           <img src="https://angular.io/assets/images/logos/angular/angular.svg" />
         </div>
@@ -13,12 +13,25 @@
     </div>
   </header>
   
-  <div class="d-flex justify-content-center col-4 row">
-      <div *ngFor="let item of cards" class="col-md-4" style="padding-bottom: 30px;">
+  
+  <div class="container main-container d-flex justify-content-center ">
+    <div class="row text-center col-md-10">
+      <div class="d-flex align-items-center">
+      
+  <!-- <div class="d-flex justify-content-center col-4 row"> -->
+      <!-- <div *ngFor="let item of cards" class="col-md-4" style="padding-bottom: 30px;">
         <div class="card h-100">>
           <a class="text-decoration-none">
-    
-            <img class="card-img-top" src="{{item.imagem}}" max-height="30px" max-width="60px" alt="" >
+     -->
+
+     <div *ngFor="let item of cards" class=" col-md-3" style="padding-bottom: 30px;">
+      <div class="card h-100">
+          <a class="text-decoration-none">
+              <div style="align-content: center;">
+                  <img class="card-img-top" src="{{ item.imagem }}"  height="164px" width="253px" alt="card img cap" />
+              </div>
+          </a>
+            <!-- <img class="card-img-top" src="{{ item.imagem }}" max-height="30px" max-width="60px" alt="" > -->
             <div class="card-body">
               <h4 class="card-title">{{item.nome}}</h4>
               <p class="card-text">{{item.texto}}</p>
@@ -26,5 +39,6 @@
                 <a href="#" class="btn btn-primary">Saiba mais</a>
               </div>
             </div>
+          </div>
         
       

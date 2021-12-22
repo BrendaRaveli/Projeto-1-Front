@@ -55,7 +55,7 @@
         "valor":10.50,
         "promocao": false,
         "valorPromo": 0,
-        "imagem": "mouse.jpg"
+        "imagem": "headset.jpg"
     },
     {
         "id": 6,
@@ -63,7 +63,7 @@
         "valor":90.00,
         "promocao": true,
         "valorPromo": 49.99,
-        "imagem": "mouse.jpg"
+        "imagem": "webcam.jpg"
     },
     {
         "id": 7,
@@ -71,7 +71,7 @@
         "valor":3000.00,
         "promocao": false,
         "valorPromo": 0,
-        "imagem": "celualar.jpg"
+        "imagem": "celular.jpg"
     },
     {
         "id": 8,

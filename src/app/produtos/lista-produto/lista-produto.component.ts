@@ -17,12 +17,12 @@ export class ListaProdutoComponent implements OnInit {
 
     this.ProdutoService.obterProdutos()
     .subscribe(
-      produtos =>{
+      (      produtos: Produto[]) =>{
         this.produtos = produtos;
         console.log(produtos);
       
       },
-      error => console.log(error)
+      (      error: any) => console.log(error)
 
     );
   }

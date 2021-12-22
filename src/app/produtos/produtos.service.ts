@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { Observable } from 'Nova pasta/Projeto-1-Front/node_modules/rxjs/dist/types';
+import { Observable, observable } from 'rxjs';
 import { Produto } from './produto';
 
 
