@@ -1,2 +1,2 @@
 # Projeto-1-Front
-Primeiro projeto front em angular
+Primeiro projeto front em Angular
